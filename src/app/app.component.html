@@ -1,36 +1,37 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
-        <button routerLink="/news">{{ 'sites.news' | translate }}</button> <br>
-        <button routerLink="">{{ 'sites.home' | translate }}</button> <br>
-        <button routerLink="/about">{{ 'sites.about' | translate }}</button> <br>
-        <button routerLink="/contact">{{ 'sites.contact' | translate }}</button> <br>
+        <button class="button" (click)="isHome()" routerLink="/news">{{ 'sites.news' | translate }}</button> <br>
+        <button class="button" (click)="isHome()" routerLink="/about">{{ 'sites.about' | translate }}</button> <br>
+        <button class="button" (click)="isHome()" routerLink="/contact">{{ 'sites.contact' | translate }}</button> <br>
         <div *ngIf="showFiller">
             <form [formGroup]="formm">
-                <mat-form-field>
+                <mat-form-field class="select">
                     <mat-select formControlName="language">
                         <mat-option *ngFor="let idiom of idioms" [value]="idiom.value">
                             {{ 'options.'+idiom.viewValue | translate }}
                         </mat-option>
                     </mat-select>
-                </mat-form-field>
-                <button (click)="useLanguage()">{{ 'options.accept' | translate }}</button>
+                </mat-form-field> <br>
+                <button class="button" (click)="useLanguage()">{{ 'options.accept' | translate }}</button>
             </form>
         </div>
-        <button *ngIf="!showFiller" (click)="showFiller = !showFiller" mat-raised-button>
-                {{ 'options.select' | translate }}
+        <button class="button" *ngIf="!showFiller" (click)="showFiller = !showFiller" mat-raised-button>
+            {{ 'options.select' | translate }}
         </button>
     </mat-drawer>
-  
-    <mat-toolbar>
+
+    <mat-toolbar class="toolbar">
         <mat-toolbar-row>
-            <button type="button" mat-button (click)="drawer.toggle()">
+            <i class="material-icons">menu</i>
+            <button class="button_menu" type="button" mat-button (click)="drawer.toggle()">
                 <p>{{ 'options.menu' | translate }}</p>
             </button>
         </mat-toolbar-row>
     </mat-toolbar>
 
+    <div *ngIf="ishome">
+        <img src="../assets//imgs/title.png" class="imagent">
+    </div>
     <router-outlet></router-outlet>
 
 </mat-drawer-container>
-

@@ -3,7 +3,9 @@
         "news": "Noticias",
         "home": "Principal",
         "about": "Sobre nosotros",
-        "contact": "Contáctanos"
+        "contact": "Contáctanos",
+        "about_text": "Esto es un sitio web donde puedes leer un montón de noticias. Además puedes ver quién escribió esas noticias y más detalles sobre ellas. Además, puedes cambiar el idioma y elegir entre Inglés y Español.",
+        "contact_text": "Puedes contactar con la creadora del sitio web enviando un correo a la siguiente dirección: ana.castano@worldline.com"
     },
     "options": {
         "accept": "Aceptar",

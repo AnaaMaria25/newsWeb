@@ -3,7 +3,9 @@
         "news": "News",
         "home": "Home",
         "about": "About us",
-        "contact": "Contact us"
+        "contact": "Contact us",
+        "about_text": "This is a website where you can read a lot of news. You can also see who wrote those news and more details about them. Besides, you can change the language and choose between English or Spanish.",
+        "contact_text": "You can contact with the creator of this website sending an email to the following address: ana.castano@worldline.com "
     },
     "options": {
         "accept": "Accept",

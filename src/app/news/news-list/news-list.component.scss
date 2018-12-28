@@ -3,3 +3,14 @@
     display: inline-block;
     margin: 38px;
 }
+.imagen:hover {
+    filter: grayscale(80%);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+     
+ }
+ .imagen {
+   width: 20%;
+   margin-top: 20px;
+   margin-left: 500px;
+ }
