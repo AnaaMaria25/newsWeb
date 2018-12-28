@@ -1,0 +1,15 @@
+{
+    "sites": {
+        "news": "News",
+        "home": "Home",
+        "about": "About us",
+        "contact": "Contact us"
+    },
+    "options": {
+        "accept": "Accept",
+        "select": "Select Language",
+        "menu": "Menu",
+        "English": "English",
+        "Spanish": "Spanish"
+    }
+}

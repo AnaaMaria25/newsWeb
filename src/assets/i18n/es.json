@@ -1,0 +1,15 @@
+{
+    "sites": {
+        "news": "Noticias",
+        "home": "Principal",
+        "about": "Sobre nosotros",
+        "contact": "Contáctanos"
+    },
+    "options": {
+        "accept": "Aceptar",
+        "select": "Seleccionar Idioma",
+        "menu": "Menú",
+        "English": "Inglés",
+        "Spanish": "Español"
+    }
+}
