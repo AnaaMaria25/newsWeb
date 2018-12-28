@@ -6,10 +6,7 @@ const routes: Routes = [
   {
     path: '',
     component: NewsListComponent
-  }, {
-    path: 'prueba',
-    loadChildren: '../prueba/prueba.module#PruebaModule'
-  },
+  }
 ];
 
 @NgModule({

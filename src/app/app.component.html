@@ -21,7 +21,7 @@
                 {{ 'options.select' | translate }}
         </button>
     </mat-drawer>
-
+  
     <mat-toolbar>
         <mat-toolbar-row>
             <button type="button" mat-button (click)="drawer.toggle()">
@@ -30,7 +30,7 @@
         </mat-toolbar-row>
     </mat-toolbar>
 
+    <router-outlet></router-outlet>
+
 </mat-drawer-container>
 
-
-<router-outlet></router-outlet>

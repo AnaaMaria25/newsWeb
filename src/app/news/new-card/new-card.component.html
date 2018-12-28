@@ -1,20 +1,17 @@
-<!-- 
-
-<p>
-  {{ new.source.name }}
-</p>
-
--->
-<p>
-  El cinturón de asteroides se formó en la nebulosa protosolar junto con el resto del sistema solar. 
-  Los fragmentos de material contenidos en la región del cinturón hubieran formado un planeta, 
-  pero las perturbaciones gravitacionales de Júpiter, el planeta más masivo, produjeron que estos 
-  fragmentos colisionaran entre sí a grandes velocidades y no pudieran agruparse, resultando en el 
-  residuo rocoso que se observa en la actualidad. Una consecuencia de estas perturbaciones son los 
-  huecos de Kirkwood; zonas donde no se encuentran asteroides debido a resonancias orbitales con 
-  Júpiter, y sus órbitas se tornan inestables. Si algún asteroide pasa a ocupar esta zona es expelido 
-  en la mayoría de los casos fuera del sistema solar, aunque en ocasiones puede ser enviado hacia 
-  algún planeta interior, como la Tierra, y colisionar con ella. 
-  Desde su formación se ha expulsado la mayor parte del material.
-
-</p>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title class="title"> {{ new.title }}</mat-card-title>
+    <mat-card-subtitle class="subtitle">{{ new.author }}</mat-card-subtitle>
+  </mat-card-header>
+  <img class="images" mat-card-image src="{{ new.urlToImage }}" alt="Photo of the new">
+  <mat-card-content>
+    <p class="text">
+      {{ new.content }}
+    </p>
+  </mat-card-content>
+  <mat-card-footer>
+   <p class="text"> {{ new.publishedAt }} </p>
+    <p class="text"> {{ new.source.name }} </p>
+    <p class="text"> {{ new.url }} </p>
+  </mat-card-footer>
+</mat-card>

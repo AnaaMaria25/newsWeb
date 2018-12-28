@@ -11,5 +11,8 @@
         "menu": "Menu",
         "English": "English",
         "Spanish": "Spanish"
+    },
+    "card": {
+        "fecha": "Date"
     }
 }
