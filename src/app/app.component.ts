@@ -8,7 +8,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'newsWeb';
   showFiller = false;
   private formm: FormGroup;
   public idioms: any[] = [

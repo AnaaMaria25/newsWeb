@@ -3,8 +3,8 @@
     <mat-drawer #drawer class="example-sidenav" mode="side">
         <button routerLink="/news">{{ 'sites.news' | translate }}</button> <br>
         <button routerLink="">{{ 'sites.home' | translate }}</button> <br>
-        <button routerLink="">{{ 'sites.about' | translate }}</button> <br>
-        <button routerLink="">{{ 'sites.contact' | translate }}</button> <br>
+        <button routerLink="/about">{{ 'sites.about' | translate }}</button> <br>
+        <button routerLink="/contact">{{ 'sites.contact' | translate }}</button> <br>
         <div *ngIf="showFiller">
             <form [formGroup]="formm">
                 <mat-form-field>
