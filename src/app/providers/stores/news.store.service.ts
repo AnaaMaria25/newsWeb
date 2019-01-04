@@ -9,7 +9,7 @@ import { APIService } from '../api/api.service';
 export class NewsStore {
     constructor(private apiService: APIService) {
     }
-    public getNews() {
-        return this.apiService.getNews();
+    public getNews(values: any) {
+        return this.apiService.getNews(values);
     }
 }

@@ -1,4 +1,48 @@
-<img src="../assets/imgs/aa.png" class="imagen">
+<img src="../assets/imgs/aa.png" class="imagen"> <br>
+
+<form [formGroup]="formulario">
+  
+  <mat-form-field class="text">
+    <input matInput placeholder="Todos o los tops"  formControlName="everything">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Asunto"  formControlName="q">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Desde"  formControlName="from">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Hasta"  formControlName="to">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Ordenar por"  formControlName="sortBy">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Pais" formControlName="country">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Categoria" formControlName="category">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Fuentes" formControlName="sources">
+  </mat-form-field>
+
+  <mat-form-field class="text">
+    <input matInput placeholder="Dominio" formControlName="domains">
+  </mat-form-field> <br>
+
+  <button class="button" (click)="getNews()">Obtener noticias</button> <br>
+
+
+</form>
+
 <ul>
   <li class="element" *ngFor="let new of news.articles">
     <app-new-card [new]="new"></app-new-card>
